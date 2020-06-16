@@ -21,7 +21,7 @@ from dash.dependencies import Input, Output
 
 warnings.filterwarnings('ignore')
 
-data = pd.read_csv('WA_Fn-UseC_-HR-Employee-Attrition.csv')
+data = pd.read_csv('data/WA_Fn-UseC_-HR-Employee-Attrition.csv')
 # Reassign target
 data.Attrition.replace(to_replace = dict(Yes = 1, No = 0), inplace = True)
 # Drop useless feat
